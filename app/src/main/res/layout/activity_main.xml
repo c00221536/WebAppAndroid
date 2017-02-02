@@ -12,14 +12,6 @@
     android:background="#ffffff"
     tools:context="com.example.david.webapp.MainActivity">
 
-    <ImageView
-        android:src="@mipmap/cv"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:id="@+id/imageView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:text="Assement 3 of WebApplication"
         android:layout_width="wrap_content"
@@ -57,16 +49,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/imageView" />
 
-    <TextView
-        android:text="Computer System Management 3rd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:id="@+id/textView6"
-        android:layout_above="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp" />
-
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -83,8 +65,26 @@
         android:layout_height="wrap_content"
         android:textSize="50px"
         android:id="@+id/textView"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="33dp"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:src="@mipmap/cv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:text="Computer System Management 3rd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/imageView6"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

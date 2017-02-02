@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent homeIntent = new Intent(MainActivity.this, HomeActivity.class);
-                getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+                //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
                 startActivity(homeIntent);
                 finish();
             }

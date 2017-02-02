@@ -52,29 +52,29 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(personal);
                 break;
             case R.id.education:
-                Intent education = new Intent(HomeActivity.this, education.class);
-                startActivity(education);
+                Intent Education = new Intent(HomeActivity.this, education.class);
+                startActivity(Education);
                 break;
-           /* case R.id.employement:
-                //Intent employement = new Intent(HomeActivity.this, employement.class);
+           case R.id.employement:
+                Intent employement = new Intent(HomeActivity.this, employement.class);
                 startActivity(employement);
                 break;
             case R.id.interet:
                 Intent interet = new Intent(HomeActivity.this, interet.class);
                 startActivity(interet);
                 break;
-            case R.id.ref:
+           case R.id.ref:
                 Intent ref = new Intent(HomeActivity.this, ref.class);
                 startActivity(ref);
                 break;
-            case R.id.project:
+             case R.id.project:
                 Intent project = new Intent(HomeActivity.this, project.class);
                 startActivity(project);
                 break;
             case R.id.about:
                 Intent about = new Intent(HomeActivity.this, about.class);
                 startActivity(about);
-                break; */
+                break;
             default:
                 break;
         }

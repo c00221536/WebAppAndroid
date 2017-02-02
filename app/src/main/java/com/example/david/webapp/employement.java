@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class education extends AppCompatActivity {
+public class employement extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -39,7 +39,7 @@ public class education extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_education);
+        setContentView(R.layout.activity_employement);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -69,7 +69,7 @@ public class education extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_education, menu);
+        getMenuInflater().inflate(R.menu.menu_employement, menu);
         return true;
     }
 
@@ -116,7 +116,7 @@ public class education extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_education, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_employement, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
             return rootView;

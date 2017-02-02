@@ -37,11 +37,6 @@
                     android:textColor="#000000"
                 android:background="#FFFFFF" />
 
-            <ImageView
-                app:srcCompat="@mipmap/boss"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:id="@+id/imageView" />
         </TableRow>
 
         <TableRow
@@ -50,7 +45,7 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="fill_parent"
                 android:layout_marginTop="6dp"
                 android:layout_weight="1"
                 android:background="#048AFB"
@@ -60,6 +55,7 @@
                 android:textColor="#fff"
                 android:clickable="true"
                 android:id="@+id/education" />
+
         </TableRow>
 
         <TableRow

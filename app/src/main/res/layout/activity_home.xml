@@ -94,11 +94,9 @@ Touch my message to have further details! :)"
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@android:color/holo_red_light"
                 android:padding="32dp"
                 android:text="Interet Hobbies"
-
                 android:textColor="#fff"
                 android:layout_marginTop="6dp"
                 android:clickable="true"
@@ -160,6 +158,4 @@ Touch my message to have further details! :)"
                 android:id="@+id/about" />
         </TableRow>
     </TableLayout>
-
-
 </ScrollView>

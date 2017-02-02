@@ -13,7 +13,6 @@ import org.w3c.dom.Text;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    public TableRow persoD;
     public TextView personal;
     public TextView education;
     public TextView employement;
@@ -23,7 +22,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public TextView about;
 
     public void init () {
-       persoD= (TableRow) findViewById(R.id.persoD);
+        personal= (TextView) findViewById(R.id.personal);
         personal.setOnClickListener(this);
         education= (TextView) findViewById(R.id.education);
         education.setOnClickListener(this);

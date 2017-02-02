@@ -16,6 +16,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Reseume of David LUONG !"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10px"
+                android:id="@+id/textView13"
+                android:background="#000"/>
+        </LinearLayout>
+
         <TableRow
             android:id="@+id/persoD"
             android:onClick="rowClick"
@@ -77,6 +92,7 @@ Touch my message to have further details! :)"
                 android:id="@+id/employement"
                 android:layout_weight="2"
                 android:background="#1BBC9B"
+                android:gravity="center"
                 android:textColor="#fff"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="6dp"
@@ -90,6 +106,7 @@ Touch my message to have further details! :)"
                 android:background="@android:color/holo_red_light"
                 android:padding="32dp"
                 android:text="Interet Hobbies"
+
                 android:textColor="#fff"
                 android:layout_marginTop="6dp"
                 android:clickable="true"
@@ -151,4 +168,6 @@ Touch my message to have further details! :)"
                 android:id="@+id/about" />
         </TableRow>
     </TableLayout>
+
+
 </RelativeLayout>

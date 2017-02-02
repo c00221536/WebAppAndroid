@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_home"
     android:layout_width="match_parent"
@@ -8,115 +9,145 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#ffffff"
+    android:background="#F0EEEF"
     tools:context="com.example.david.webapp.HomeActivity">
 
-    <LinearLayout
-        android:layout_weight=".3"
-        android:orientation="vertical"
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-
-        <RelativeLayout
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="220dp">
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:id="@+id/persoD"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF">
 
             <TextView
-                android:text="Resume of David ! XOXO"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="63dp" />
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="50dp"
+                android:text="Personal Detail"
+                    android:textColor="#000000"
+                android:background="#FFFFFF" />
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@mipmap/ic_launcher"
-                android:layout_above="@+id/textView"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="17dp" />
-        </RelativeLayout>
+                app:srcCompat="@mipmap/boss"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView" />
+        </TableRow>
 
-        <LinearLayout
-            android:orientation="vertical"
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight=".3">
+            android:layout_height="match_parent" >
 
-            <Button
-                android:text="Personal Details"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/personalD" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight=".3">
-
-            <Button
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="#048AFB"
+                android:gravity="center"
+                android:padding="40dp"
                 android:text="Education History"
+                android:textColor="#fff"
+                android:clickable="true"
+                android:id="@+id/education" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/employement"
+                android:layout_weight="2"
+                android:background="#1BBC9B"
+                android:gravity="center"
+                android:padding="32dp"
+                android:textColor="#fff"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="6dp"
+                android:clickable="true"
+                android:text="Employement History" />
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/educationH" />
-        </LinearLayout>
+                android:layout_weight="2"
+                android:background="@android:color/holo_red_light"
+                android:gravity="center"
+                android:padding="32dp"
+                android:text="Interet Hobbies"
+                android:textColor="#fff"
+                android:layout_marginTop="6dp"
+                android:clickable="true"
+                android:id="@+id/interet" />
 
-        <LinearLayout
-            android:orientation="vertical"
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight=".3">
+            android:layout_marginTop="4dp">
 
-            <Button
-                android:text="Employment History"
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/employmentH" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight=".3">
-
-            <Button
-                android:text="Interest Hobbies"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/interestH" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight=".3">
-
-            <Button
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:padding="15dp"
                 android:text="References"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/references" />
+                android:textColor="#FFF"
+                android:background="#DBDBDB"
+                android:id="@+id/ref" />
 
-        </LinearLayout>
+        </TableRow>
 
-        <LinearLayout
-            android:orientation="vertical"
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
-            <Button
-                android:text="Project work"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/projectW" />
-        </LinearLayout>
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="32dp"
+                android:text="Project Work"
+                android:textColor="#FFF"
+                android:background="#F2A735"
+                android:layout_marginTop="6dp"
+                android:id="@+id/project" />
 
-    </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:padding="15dp"
+                android:text="About"
+                android:textColor="#FFF"
+                android:background="#DBDBDB"
+                android:id="@+id/about" />
+        </TableRow>
+    </TableLayout>
 </ScrollView>

@@ -18,7 +18,9 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+        </TableRow>
 
         <TableRow
             android:id="@+id/persoD"
@@ -35,7 +37,8 @@
                 android:padding="50dp"
                 android:text="Personal Detail"
                     android:textColor="#000000"
-                android:background="#FFFFFF" />
+                android:background="#FFFFFF"
+                android:id="@+id/personal" />
 
         </TableRow>
 

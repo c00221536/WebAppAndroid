@@ -29,25 +29,30 @@ WebApplication Assemment 3"
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:srcCompat="@mipmap/it_carlow_logo"
-        android:id="@+id/imageView6"
+        android:id="@+id/itc"
         android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/imageView2" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@mipmap/universit"
-        android:id="@+id/imageView5"
-        android:layout_alignTop="@+id/imageView2"
-        android:layout_alignParentStart="true" />
+        android:layout_toStartOf="@+id/ubfc"
+        android:clickable="true"
+        android:onClick="itCarlow"/>
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:srcCompat="@drawable/ubfc"
-        android:id="@+id/imageView2"
+        android:id="@+id/ubfc"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:onClick="ubfc"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/universit"
+        android:id="@+id/uB"
+        android:layout_alignTop="@+id/ubfc"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:onClick="uB"/>
 
 </RelativeLayout>

@@ -13,8 +13,9 @@
 
     <TextView
         android:text="Resume of David LUONG for Android
-        Android Application realised
-by David LUONG © All rights reserved
+        Android Application devlopped
+by David LUONG
+© All rights reserved
 Version 1.0
 WebApplication Assemment 3"
         android:layout_width="wrap_content"

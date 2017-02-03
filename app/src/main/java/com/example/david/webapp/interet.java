@@ -19,7 +19,10 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class interet extends AppCompatActivity implements interet1.OnFragmentInteractionListener, interet2.OnFragmentInteractionListener, interet3.OnFragmentInteractionListener {
+public class interet extends AppCompatActivity implements interet1.OnFragmentInteractionListener,
+        interet2.OnFragmentInteractionListener, interet3.OnFragmentInteractionListener,
+        interet4.OnFragmentInteractionListener, interet5.OnFragmentInteractionListener,
+        interet6.OnFragmentInteractionListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -121,6 +124,15 @@ public class interet extends AppCompatActivity implements interet1.OnFragmentInt
                 case 3:
                     fragment = new interet3();
                     break;
+                case 4:
+                    fragment = new interet4();
+                    break;
+                case 5:
+                    fragment = new interet5();
+                    break;
+                case 6:
+                    fragment = new interet6();
+                    break;
             }
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
@@ -158,7 +170,7 @@ public class interet extends AppCompatActivity implements interet1.OnFragmentInt
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 6;
         }
 
         @Override
@@ -170,6 +182,12 @@ public class interet extends AppCompatActivity implements interet1.OnFragmentInt
                     return "SECTION 2";
                 case 2:
                     return "SECTION 3";
+                case 3:
+                    return "SECTION 4";
+                case 4:
+                    return "SECTION 5";
+                case 5:
+                    return "SECTION 6";
             }
             return null;
         }

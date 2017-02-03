@@ -25,13 +25,13 @@
             android:name=".employement"
             android:label="@string/title_activity_employement"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".about" />
+        <activity android:name=".ref" />
+        <activity android:name=".project" />
         <activity
             android:name=".interet"
             android:label="@string/title_activity_interet"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".about" />
-        <activity android:name=".ref" />
-        <activity android:name=".project"></activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -14,15 +14,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <ImageView
-        android:layout_width="120dp"
-        app:srcCompat="@drawable/qwer"
-        android:id="@+id/imageView18"
-        android:layout_height="120dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp" />
-
     <TextView
         android:text="Placement Qwerteach"
         android:layout_width="wrap_content"
@@ -32,5 +23,23 @@
         android:gravity="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        app:srcCompat="@drawable/qwer"
+        android:id="@+id/imageView18"
+        android:layout_marginBottom="31dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/belgium"
+        android:id="@+id/belgium"
+        android:layout_marginBottom="88dp"
+        android:layout_alignBottom="@+id/imageView18"
+        android:layout_alignStart="@+id/imageView18" />
 
 </RelativeLayout>

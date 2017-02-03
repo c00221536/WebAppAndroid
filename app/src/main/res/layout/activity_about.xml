@@ -27,33 +27,35 @@ WebApplication Assemment 3"
         android:id="@+id/textView3" />
 
     <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ubfc2"
+        android:id="@+id/imageView22"
+        android:layout_marginTop="77dp"
+        android:layout_alignTop="@+id/uB"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
         app:srcCompat="@mipmap/it_carlow_logo"
         android:id="@+id/itc"
-        android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/ubfc"
         android:clickable="true"
-        android:onClick="itCarlow"/>
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/ubfc"
-        android:id="@+id/ubfc"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="20dp"
-        android:onClick="ubfc"/>
+        android:onClick="itCarlow"
+        android:layout_marginEnd="37dp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:srcCompat="@mipmap/universit"
         android:id="@+id/uB"
-        android:layout_alignTop="@+id/ubfc"
-        android:layout_alignParentStart="true"
         android:clickable="true"
-        android:onClick="uB"/>
+        android:onClick="uB"
+        android:layout_alignBottom="@+id/itc"
+        android:layout_toStartOf="@+id/itc"
+        android:layout_marginBottom="22dp" />
 
 </RelativeLayout>

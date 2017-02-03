@@ -33,43 +33,6 @@
         android:id="@+id/textView5" />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@mipmap/universit"
-        android:id="@+id/imageView5"
-        android:layout_below="@+id/textView6"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="22dp" />
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:srcCompat="@mipmap/it_carlow_logo"
-        android:id="@+id/itc"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/imageView" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@drawable/ubfc"
-        android:id="@+id/ubfc"
-        android:layout_marginTop="25dp"
-        android:layout_alignTop="@+id/itc"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:text="Resume of David LUONG"
-        android:textColor="#000000"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="50px"
-        android:id="@+id/textView"
-        android:layout_marginTop="33dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
         android:src="@mipmap/cv"
         android:layout_width="150dp"
         android:layout_height="150dp"
@@ -79,12 +42,49 @@
         android:layout_marginTop="15dp" />
 
     <TextView
+        android:text="Resume of David LUONG"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:id="@+id/textView"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ubfc2"
+        android:id="@+id/imageView25"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
         android:text="Computer System Management 3rd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:id="@+id/textView6"
-        android:layout_above="@+id/itc"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/it_carlow_logo"
+        android:id="@+id/itc"
+        android:layout_toEndOf="@+id/imageView5"
+        android:layout_below="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/universit"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
 
 </RelativeLayout>

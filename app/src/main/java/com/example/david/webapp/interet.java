@@ -1,5 +1,6 @@
 package com.example.david.webapp;
 
+import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +19,7 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class interet extends AppCompatActivity {
+public class interet extends AppCompatActivity implements interet1.OnFragmentInteractionListener, interet2.OnFragmentInteractionListener, interet3.OnFragmentInteractionListener {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -85,6 +86,11 @@ public class interet extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+
     /**
      * A placeholder fragment containing a simple view.
      */
@@ -102,11 +108,23 @@ public class interet extends AppCompatActivity {
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
-            PlaceholderFragment fragment = new PlaceholderFragment();
+        public static Fragment newInstance(int sectionNumber) {
+
+            Fragment fragment = null;
+            switch(sectionNumber){
+                case 1:
+                    fragment = new interet1();
+                    break;
+                case 2:
+                    fragment = new interet2();
+                    break;
+                case 3:
+                    fragment = new interet3();
+                    break;
+            }
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-            fragment.setArguments(args);
+
             return fragment;
         }
 

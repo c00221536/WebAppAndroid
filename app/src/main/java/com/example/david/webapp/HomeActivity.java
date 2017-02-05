@@ -14,7 +14,6 @@ import org.w3c.dom.Text;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    ViewPager viewPager;
     public TextView personal;
     public TextView education;
     public TextView employement;
@@ -38,6 +37,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         work.setOnClickListener(this);
         about= (TextView) findViewById(R.id.about);
         about.setOnClickListener(this);
+
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {

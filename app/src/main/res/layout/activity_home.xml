@@ -14,7 +14,7 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:orientation="vertical"
@@ -32,28 +32,15 @@
             android:background="#FFFFFF"
             android:clickable="true">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_weight="0."
-                android:layout_height="100dp"
-                app:srcCompat="@drawable/dav"
-                android:id="@+id/imageView9" />
 
             <TextView
-                android:layout_width="233dp"
+                android:text="Hey ! Welcome to my Resume Applcation! My name di David and I coming from France! If you want futher details on me touch here! :)"
+                android:gravity="center"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Hi! My name is David! I am currently Erasmus student at the Carlow IT! I'm studying Computer System Manager in 3rd years!
-Touch my message to have further details! :)"
-                android:textSize="24px"
-                android:textColor="#000000"
-                android:clickable="true"
-                android:background="#FFFFFF"
-                android:id="@+id/personal" />
-            </LinearLayout>
+                android:drawableTop="@drawable/boss"
+                android:id="@+id/personal"
+                android:layout_weight="1" />
         </TableRow>
 
         <TableRow
@@ -61,13 +48,14 @@ Touch my message to have further details! :)"
             android:layout_height="match_parent" >
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:layout_weight="1"
+                android:drawableLeft="@drawable/diploma"
                 android:background="#048AFB"
                 android:gravity="center"
-                android:padding="40dp"
+                android:padding="15dp"
                 android:text="Education History"
                 android:textColor="#fff"
                 android:clickable="true"
@@ -85,6 +73,7 @@ Touch my message to have further details! :)"
                 android:layout_weight="2"
                 android:background="#1BBC9B"
                 android:gravity="center"
+                android:drawableBottom="@drawable/employees"
                 android:textColor="#fff"
                 android:layout_marginTop="6dp"
                 android:layout_marginRight="6dp"
@@ -95,7 +84,8 @@ Touch my message to have further details! :)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@android:color/holo_red_light"
-                android:padding="32dp"
+                android:padding="20dp"
+                android:drawableBottom="@drawable/plane"
                 android:text="Interet Hobbies"
                 android:textColor="#fff"
                 android:layout_marginTop="6dp"
@@ -112,10 +102,11 @@ Touch my message to have further details! :)"
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:drawableLeft="@drawable/hand"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_marginTop="6dp"
-                android:padding="15dp"
+                android:padding="12dp"
                 android:text="References"
                 android:textColor="#FFF"
                 android:background="#DBDBDB"
@@ -131,8 +122,9 @@ Touch my message to have further details! :)"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:drawableRight="@drawable/whiteboard"
                 android:gravity="center"
-                android:padding="32dp"
+                android:padding="12dp"
                 android:text="Project Work"
                 android:textColor="#FFF"
                 android:background="#F2A735"
@@ -151,10 +143,11 @@ Touch my message to have further details! :)"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_marginTop="6dp"
-                android:padding="15dp"
+                android:padding="10dp"
                 android:text="About"
                 android:textColor="#FFF"
                 android:background="#DBDBDB"
+                android:drawableLeft="@drawable/placeholder"
                 android:id="@+id/about" />
         </TableRow>
     </TableLayout>

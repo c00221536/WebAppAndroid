@@ -25,15 +25,6 @@
         android:layout_centerHorizontal="true" />
 
     <ImageView
-        app:srcCompat="@drawable/qwer"
-        android:id="@+id/imageView18"
-        android:layout_marginBottom="31dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:srcCompat="@drawable/belgium"
@@ -41,5 +32,15 @@
         android:layout_marginBottom="88dp"
         android:layout_alignBottom="@+id/imageView18"
         android:layout_alignStart="@+id/imageView18" />
+
+    <ImageView
+        app:srcCompat="@drawable/qwer"
+        android:id="@+id/imageView18"
+        android:layout_marginBottom="31dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
 
 </RelativeLayout>

@@ -1,5 +1,7 @@
 package com.example.david.webapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,5 +19,15 @@ public class educationtab2 extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.educationtab2, container, false);
         return rootView;
+    }
+
+    public void iutD(View view) {
+        Intent iutD = new Intent(Intent.ACTION_VIEW, Uri.parse("http://iutdijon.u-bourgogne.fr/www/en/")); //Redirect link to IT Carlow website
+        startActivity(iutD); //Start of the Activity
+    }
+
+    public void uB(View view) {
+        Intent ub = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.u-bourgogne.fr/")); //Redirect link to UB
+        startActivity(ub); //Start the activity
     }
 }

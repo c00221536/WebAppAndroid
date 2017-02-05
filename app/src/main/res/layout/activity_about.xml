@@ -11,21 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.david.webapp.about">
 
-    <TextView
-        android:text="Resume of David LUONG for Android
-        Android Application devlopped
-by David LUONG
-© All rights reserved
-Version 1.0
-WebApplication Assemment 3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="116dp"
-        android:id="@+id/textView3" />
-
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,18 +19,6 @@ WebApplication Assemment 3"
         android:layout_marginTop="77dp"
         android:layout_alignTop="@+id/uB"
         android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        app:srcCompat="@mipmap/it_carlow_logo"
-        android:id="@+id/itc"
-        android:clickable="true"
-        android:onClick="itCarlow"
-        android:layout_marginEnd="37dp"
-        android:layout_marginTop="45dp"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentEnd="true" />
 
     <ImageView
         android:layout_width="100dp"
@@ -57,5 +30,50 @@ WebApplication Assemment 3"
         android:layout_alignBottom="@+id/itc"
         android:layout_toStartOf="@+id/itc"
         android:layout_marginBottom="22dp" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@mipmap/it_carlow_logo"
+        android:id="@+id/itc"
+        android:clickable="true"
+        android:onClick="itCarlow"
+        android:layout_marginEnd="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="91dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="© All rights reserved
+Version 1.0
+WebApplication Assemment 3"
+        android:layout_marginBottom="34dp"
+        android:id="@+id/textView11"
+        android:layout_above="@+id/imageView22"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="        Android Application devlopped
+by David LUONG
+"
+        android:id="@+id/textView14"
+        android:layout_above="@+id/textView11"
+        android:layout_alignStart="@+id/uB"
+        android:layout_marginBottom="26dp" />
+
+    <TextView
+        android:text="Resume of David LUONG for Android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

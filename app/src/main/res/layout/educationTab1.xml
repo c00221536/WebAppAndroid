@@ -35,7 +35,8 @@ Bachelor Computer System Management"
         android:layout_marginEnd="53dp"
         android:layout_marginBottom="28dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:clickable="true" />
 
     <ImageView
         android:layout_width="110dp"
@@ -53,6 +54,7 @@ Bachelor Computer System Management"
         android:id="@+id/imageView15"
         android:layout_marginBottom="11dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/imageView11" />
+        android:layout_alignEnd="@+id/imageView11"
+        android:clickable="true" />
 
 </RelativeLayout>

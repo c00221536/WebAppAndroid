@@ -48,8 +48,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="© All rights reserved
-Version 1.0
-WebApplication Assemment 3"
+"
         android:layout_marginBottom="34dp"
         android:id="@+id/textView11"
         android:layout_above="@+id/imageView22"
@@ -75,5 +74,21 @@ by David LUONG
         android:id="@+id/textView3"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Version 1.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_above="@+id/itc"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="WebApplication Assemment 3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView15" />
 
 </RelativeLayout>

@@ -9,75 +9,91 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.david.webapp.skill$PlaceholderFragment">
 
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/android"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="76dp"
-        android:id="@+id/imageView44"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/imageView63"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:srcCompat="@drawable/browser"
+        android:layout_marginStart="37dp"
+        android:id="@+id/imageView64"
+        android:layout_alignTop="@+id/imageView63"
+        android:layout_toEndOf="@+id/imageView63" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/html"
-        android:layout_marginTop="30dp"
-        android:id="@+id/imageView46"
-        android:layout_below="@+id/imageView44"
+        android:id="@+id/imageView66"
+        android:layout_alignTop="@+id/imageView65"
         android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/javascript"
-        android:id="@+id/imageView47"
-        android:layout_alignTop="@+id/imageView46"
-        android:layout_toStartOf="@+id/imageView46"
-        android:layout_marginEnd="19dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/css"
-        android:layout_marginStart="28dp"
-        android:id="@+id/imageView48"
-        android:layout_alignTop="@+id/imageView46"
-        android:layout_toEndOf="@+id/imageView46" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/browser"
-        android:layout_marginStart="33dp"
-        android:id="@+id/imageView45"
-        android:layout_above="@+id/imageView46"
-        android:layout_toEndOf="@+id/imageView44" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/php"
-        android:layout_marginTop="30dp"
-        android:id="@+id/imageView49"
-        android:layout_below="@+id/imageView46"
-        android:layout_alignStart="@+id/imageView44" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="150px"
-        app:srcCompat="@drawable/ruby"
-        android:id="@+id/imageView51"
-        android:layout_marginTop="15dp"
-        android:layout_below="@+id/imageView49"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/imageView67"
+        android:layout_alignTop="@+id/imageView66"
+        android:layout_toEndOf="@+id/imageView64" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/mysql"
-        android:id="@+id/imageView50"
-        android:layout_above="@+id/imageView51"
-        android:layout_toEndOf="@+id/imageView46" />
+        android:layout_marginTop="26dp"
+        android:id="@+id/imageView68"
+        android:layout_below="@+id/imageView66"
+        android:layout_toEndOf="@+id/imageView65" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/php"
+        android:id="@+id/imageView69"
+        android:layout_alignTop="@+id/imageView68"
+        android:layout_toStartOf="@+id/imageView67" />
+
+    <ImageView
+        android:layout_width="175px"
+        app:srcCompat="@drawable/ruby"
+        android:id="@+id/imageView71"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/imageView68"
+        android:layout_centerHorizontal="true"
+        android:layout_height="175px" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/windows"
+        android:id="@+id/imageView72"
+        android:layout_below="@+id/imageView71"
+        android:layout_alignStart="@+id/imageView63" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/linux"
+        android:id="@+id/imageView73"
+        android:layout_below="@+id/imageView71"
+        android:layout_alignStart="@+id/imageView69" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/css"
+        android:layout_marginTop="25dp"
+        android:id="@+id/imageView65"
+        android:layout_below="@+id/imageView63"
+        android:layout_toStartOf="@+id/imageView72" />
+
 </RelativeLayout>

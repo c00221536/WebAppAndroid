@@ -14,14 +14,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <ImageView
-        app:srcCompat="@drawable/francelangue"
-        android:layout_marginStart="54dp"
-        android:id="@+id/imageView26"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="107dp"
-        android:layout_below="@+id/section_label"
+    <TextView
+        android:text="Native language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView53"
+        android:textSize="50px"
+        android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/section_label" />
 
     <ImageView
@@ -29,8 +28,28 @@
         android:id="@+id/imageView27"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_alignTop="@+id/imageView26"
+        android:layout_marginEnd="28dp"
+        android:layout_above="@+id/textView54"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="46dp" />
+        android:layout_marginBottom="18dp" />
+
+    <ImageView
+        app:srcCompat="@drawable/francelangue"
+        android:id="@+id/imageView26"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="36dp"
+        android:layout_alignTop="@+id/imageView27"
+        android:layout_toEndOf="@+id/section_label" />
+
+    <TextView
+        android:text="B1 Level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView54"
+        android:textSize="50px"
+        android:layout_alignBaseline="@+id/textView53"
+        android:layout_alignBottom="@+id/textView53"
+        android:layout_alignEnd="@+id/imageView27" />
 
 </RelativeLayout>

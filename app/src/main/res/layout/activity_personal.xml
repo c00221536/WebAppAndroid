@@ -22,15 +22,6 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:id="@+id/textView34"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:text="David LUONG" />
-
-    <TextView
         android:text="10 rue des hortensias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,42 +54,53 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/textView38" />
 
+    <TextView
+        android:text="Hey! My name is David! "
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView39"
+        android:layout_below="@+id/textView38"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="I am currently Erasmus Student at the Institute of Technology Carlow. My own University is the University of Burgundy. I am currently in Bachelor 3rd year of Computer System Management."
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView45"
+        android:layout_below="@+id/textView39"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView34"
+        android:text="David LUONG"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
         app:srcCompat="@drawable/linkedin"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="50dp"
         android:id="@+id/imageView21"
         android:clickable="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="Hey! My name is David! "
+        android:text="I really like everything in link with the technology, the creation and the evolution. You will find directly my LinkedIn profile below :)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:id="@+id/textView39"
-        android:layout_below="@+id/textView38"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="I am currently Erasmus Student at the Institute of Technology Carlow."
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView45"
-        android:layout_below="@+id/textView39"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView46"
         android:layout_below="@+id/textView45"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:id="@+id/textView46" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
 
 </RelativeLayout>

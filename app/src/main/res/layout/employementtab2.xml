@@ -43,4 +43,29 @@
         android:layout_centerHorizontal="true"
         android:clickable="true" />
 
+    <TextView
+        android:text="During 3months, I joined the development team of Qwerteach and  I realized the migration of a website with all this functionnality  on a Framework who named Ruby on rails as Web Developer. Moreover I also  have participed to the integration of the website. This intership allowed me to discover an new language and his functionnality, all  this functionnality are was very useful for a fastest development."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:id="@+id/textView31" />
+
+    <TextView
+        android:text="Avenue Winston Churchill 67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView32" />
+
+    <TextView
+        android:text="1180 Brussels, Belgium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView32"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView33" />
+
 </RelativeLayout>

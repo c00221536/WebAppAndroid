@@ -34,4 +34,29 @@
         android:layout_centerHorizontal="true"
         android:clickable="true" />
 
+    <TextView
+        android:text="I followed the team of the IT system of the compagny. This team manages all the  IT services of the company at Besançon. This internship allowed me to discover the world of the entreprise and the management of a computer park (almost 300 computers) and the network administration."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:id="@+id/textView40" />
+
+    <TextView
+        android:text=" 4 Chemin du Rond Buisson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView41" />
+
+    <TextView
+        android:text="25220 Chalezeule, France"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView41"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView42" />
+
 </RelativeLayout>

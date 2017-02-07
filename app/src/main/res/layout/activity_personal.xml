@@ -12,16 +12,6 @@
     android:background="#FFFFFF"
     tools:context="com.example.david.webapp.personal">
 
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        app:srcCompat="@drawable/linkedin"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="63dp"
-        android:id="@+id/imageView21"
-        android:clickable="true" />
-
     <TextView
         android:text="My personal Details"
         android:layout_width="wrap_content"
@@ -30,4 +20,66 @@
         android:textSize="60px"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="David LUONG" />
+
+    <TextView
+        android:text="10 rue des hortensias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView34"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView35" />
+
+    <TextView
+        android:text="39100 Dole, France"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView35"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView36" />
+
+    <TextView
+        android:text="luongd39@gmail.com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/textView37"
+        android:layout_below="@+id/textView36"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="+33 6 12 52 82 27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView37"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView38" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/linkedin"
+        android:layout_marginBottom="64dp"
+        android:id="@+id/imageView21"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView38"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:id="@+id/textView39" />
+
 </RelativeLayout>

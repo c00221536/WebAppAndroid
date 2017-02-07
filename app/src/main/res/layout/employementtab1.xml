@@ -34,4 +34,32 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:text="7 Route Nationale "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView43" />
+
+    <TextView
+        android:text="39100 Choisey, France"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView43"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView44" />
+
+    <TextView
+        android:text="During 2 months, I joined the team of  stationery aisle in the back-to-school season (July and August). I was an handworker, my tasks was to install products on the shelf. Secondly, I helped customers to find their products. Moreover, due
+to departure in holiday of employees, I was transfered to hobbies section (bike,
+smiwing pool, toys), I was in charge to sold bike and help customers to do their choice.
+Thanks to this job, I had the possibility to discover the functionnement of
+an hypermarket and to have an experience with customers."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView25"
+        android:layout_above="@+id/imageView17"
+        android:layout_toEndOf="@+id/section_label" />
+
 </RelativeLayout>

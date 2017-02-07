@@ -37,6 +37,7 @@
         app:srcCompat="@drawable/qwer"
         android:id="@+id/imageView18"
         android:layout_marginBottom="31dp"
+        android:onClick="qwer"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"

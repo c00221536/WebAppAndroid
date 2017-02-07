@@ -9,35 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.david.webapp.education$PlaceholderFragment">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DUETI and
-Bachelor Computer System Management"
-        android:textSize="50px"
-         android:gravity="center"/>
-
-    <ImageView
-        android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:srcCompat="@drawable/france"
-        android:id="@+id/imageView10"
-        android:layout_marginBottom="72dp"
-        android:layout_alignBottom="@+id/imageView16"
-        android:layout_alignStart="@+id/imageView16" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:srcCompat="@mipmap/universit"
-        android:id="@+id/imageView16"
-        android:layout_marginEnd="53dp"
-        android:layout_marginBottom="28dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:clickable="true" />
-
     <ImageView
         android:layout_width="110dp"
         android:layout_height="110dp"
@@ -47,14 +18,91 @@ Bachelor Computer System Management"
         android:layout_toStartOf="@+id/imageView10"
         android:layout_marginEnd="37dp" />
 
+    <TextView
+        android:text="Ireland"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView57"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView58" />
+
+    <TextView
+        android:text="and "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:layout_below="@+id/section_label"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView59" />
+
+    <TextView
+        android:text="Bachelor Computer System Management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:gravity="center"
+        android:layout_below="@+id/textView59"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView60" />
+
+    <TextView
+        android:text="Kilkenny Rd, Moanacurragh, Carlow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView57"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/textView60"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Erasmus Program"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView60"
+        android:textSize="30px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView62" />
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="45px"
+         android:gravity="center"
+        android:text="University Diploma of International Studies"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/france"
+        android:id="@+id/imageView10"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/textView58"
+        android:layout_alignStart="@+id/imageView16" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/universit"
+        android:id="@+id/imageView16"
+        android:onClick="uB"
+        android:layout_marginBottom="29dp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView58" />
+
     <ImageView
         android:layout_width="130dp"
+        android:onClick="itCarlow"
         android:layout_height="130dp"
         app:srcCompat="@drawable/it_carlow_logo"
-        android:id="@+id/imageView15"
-        android:layout_marginBottom="11dp"
+        android:id="@+id/itC"
+        android:clickable="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/imageView11"
-        android:clickable="true" />
+        android:layout_toStartOf="@+id/textView59" />
 
 </RelativeLayout>

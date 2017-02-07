@@ -14,12 +14,10 @@ public class about extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
     }
-
     public void itCarlow (View view) {
         Intent itC = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.itcarlow.ie/")); //Redirect link to IT Carlow website
         startActivity(itC); //Start of the Activity
     }
-
     public void uB(View view){
         Intent ub = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.u-bourgogne.fr/")); //Redirect link to UB
         startActivity(ub); //Start the activity
@@ -28,6 +26,7 @@ public class about extends AppCompatActivity {
         Intent ubfc = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ubfc.fr/")); //Redirect UBFC
         startActivity(ubfc); //Start activity
     }
+
 }
 
 

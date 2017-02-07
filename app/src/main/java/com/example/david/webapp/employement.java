@@ -1,5 +1,7 @@
 package com.example.david.webapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -65,6 +67,18 @@ public class employement extends AppCompatActivity {
 
     }
 
+    public void qwer(View view){
+        Intent qwer = new Intent(Intent.ACTION_VIEW, Uri.parse("https://qwerteach.com/")); //Redirect Qwer
+        startActivity(qwer); //Start activity
+    }
+    public void cml(View view){
+        Intent cml = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cml-it.com/en/")); //Redirect CML
+        startActivity(cml); //Start activity
+    }
+    public void cora(View view){
+        Intent cora = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.cora.fr/dole/")); //Redirect Cora
+        startActivity(cora); //Start activity
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

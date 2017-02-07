@@ -14,13 +14,4 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/rightarrow"
-        android:layout_marginTop="26dp"
-        android:id="@+id/imageView9"
-        android:layout_marginEnd="24dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
 </RelativeLayout>

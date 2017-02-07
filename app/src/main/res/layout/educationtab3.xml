@@ -10,23 +10,44 @@
     tools:context="com.example.david.webapp.education$PlaceholderFragment">
 
     <TextView
+        android:text="Avenue Charles Laurent Thouverez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView46"
+        android:layout_below="@+id/section_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:text=" 39100 Dole, France"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView46"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView55" />
+
+    <TextView
         android:id="@+id/section_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Technology
-GCE A-Level
+        android:text="Technology GCE A-Level
 with Environment Specification"
         android:textSize="50px"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_marginTop="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="150dp"
         android:layout_height="150dp"
         app:srcCompat="@drawable/logotype"
+        android:onClick="duhamel"
         android:id="@+id/imageView14"
-        android:layout_marginBottom="41dp"
-        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/textView46"
         android:layout_centerHorizontal="true"
-        android:clickable="true" />
+        android:layout_width="175dp" />
 
 </RelativeLayout>

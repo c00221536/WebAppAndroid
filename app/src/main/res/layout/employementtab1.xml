@@ -19,6 +19,7 @@
         android:layout_height="150dp"
         app:srcCompat="@drawable/cora"
         android:id="@+id/imageView17"
+        android:onClick=""
         android:layout_marginBottom="18dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

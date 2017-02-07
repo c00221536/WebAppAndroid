@@ -20,8 +20,4 @@ public class employementtab1 extends Fragment{
         return rootView;
     }
 
-    public void linkedIn(View view){
-        Intent linkedIn = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/david-luong-b61562112/")); //Redirect UBFC
-        startActivity(linkedIn); //Start activity
-    }
 }

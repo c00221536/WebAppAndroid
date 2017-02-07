@@ -34,11 +34,11 @@
 
 
             <TextView
-                android:text="Hey ! Welcome to my Resume Applcation! My name di David and I coming from France! If you want futher details on me touch here! :)"
+                android:text="Personal Detail"
                 android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:drawableTop="@drawable/boss"
+                android:drawableTop="@drawable/manager"
                 android:id="@+id/personal"
                 android:layout_weight="1" />
         </TableRow>

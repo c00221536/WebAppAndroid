@@ -28,6 +28,7 @@
         app:srcCompat="@drawable/cml"
         android:id="@+id/imageView19"
         android:layout_width="160dp"
+        android:onClick="cml"
         android:layout_height="130dp"
         android:layout_marginBottom="33dp"
         android:layout_alignParentBottom="true"

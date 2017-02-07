@@ -20,14 +20,4 @@ public class educationtab1 extends Fragment {
         View rootView = inflater.inflate(R.layout.educationtab1, container, false);
         return rootView;
     }
-
-    public void itCarlow(View view) {
-        Intent itC = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.itcarlow.ie/")); //Redirect link to IT Carlow website
-        startActivity(itC); //Start of the Activity
-    }
-
-    public void uB(View view) {
-        Intent ub = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.u-bourgogne.fr/")); //Redirect link to UB
-        startActivity(ub); //Start the activity
-    }
 }

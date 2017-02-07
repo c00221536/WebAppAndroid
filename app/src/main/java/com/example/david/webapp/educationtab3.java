@@ -1,5 +1,7 @@
 package com.example.david.webapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,4 +19,5 @@ public class educationtab3 extends Fragment{
         View rootView = inflater.inflate(R.layout.educationtab3, container, false);
         return rootView;
     }
+
 }

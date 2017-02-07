@@ -1,5 +1,7 @@
 package com.example.david.webapp;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -61,7 +63,26 @@ public class education extends AppCompatActivity {
 
     }
 
-
+    public void duhamel(View view){
+        Intent duhamel = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.lycee-jacques-duhamel-dole-jura.fr/fr/lycee-jacques-duhamel-dole-franche-comte.php"));
+        startActivity(duhamel); //Start activity
+    }
+    public void iutD(View view) {
+        Intent iutD = new Intent(Intent.ACTION_VIEW, Uri.parse("http://iutdijon.u-bourgogne.fr/www/en/")); //Redirect link to IT Carlow website
+        startActivity(iutD); //Start of the Activity
+    }
+    public void itCarlow (View view) {
+        Intent itC = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.itcarlow.ie/")); //Redirect link to IT Carlow website
+        startActivity(itC); //Start of the Activity
+    }
+    public void uB(View view){
+        Intent ub = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.u-bourgogne.fr/")); //Redirect link to UB
+        startActivity(ub); //Start the activity
+    }
+    public void ubfc(View view){
+        Intent ubfc = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.ubfc.fr/")); //Redirect UBFC
+        startActivity(ubfc); //Start activity
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

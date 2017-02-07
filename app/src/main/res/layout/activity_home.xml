@@ -94,6 +94,24 @@
         </TableRow>
 
         <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableRight="@drawable/skill"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:padding="12dp"
+                android:text="Skills"
+                android:textColor="#FFF"
+                android:background="#806E98"
+                android:id="@+id/skill" />
+        </TableRow>
+
+        <TableRow
             android:id="@+id/tableRow2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -21,6 +21,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public TextView reference;
     public TextView work;
     public TextView about;
+    public TextView skill;
 
     public void init () {
         personal= (TextView) findViewById(R.id.personal);
@@ -37,6 +38,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         work.setOnClickListener(this);
         about= (TextView) findViewById(R.id.about);
         about.setOnClickListener(this);
+        skill= (TextView) findViewById(R.id.skill);
+        skill.setOnClickListener(this);
 
     }
     @Override
@@ -76,6 +79,10 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.about:
                 Intent about = new Intent(HomeActivity.this, about.class);
                 startActivity(about);
+                break;
+            case R.id.skill:
+                Intent skill = new Intent(HomeActivity.this, skill.class);
+                startActivity(skill);
                 break;
             default:
                 break;

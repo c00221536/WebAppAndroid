@@ -150,11 +150,11 @@ public class skill extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "Computing";
                 case 1:
-                    return "SECTION 2";
+                    return "Languages";
                 case 2:
-                    return "SECTION 3";
+                    return "Other";
             }
             return null;
         }

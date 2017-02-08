@@ -33,7 +33,7 @@
             android:label="@string/title_activity_interet"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Skill"
+            android:name=".skill"
             android:label="@string/title_activity_skill"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

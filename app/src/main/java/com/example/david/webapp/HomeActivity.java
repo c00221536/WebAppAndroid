@@ -75,7 +75,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(about);
                 break;
             case R.id.skill:
-                Intent skill = new Intent(HomeActivity.this, Skill.class);
+                Intent skill = new Intent(HomeActivity.this, com.example.david.webapp.skill.class);
                 startActivity(skill);
                 break;
             default:

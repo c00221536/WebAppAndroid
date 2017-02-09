@@ -1,13 +1,13 @@
 package com.example.david.webapp;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
-
     public TextView personal;
     public TextView education;
     public TextView employement;
@@ -17,7 +17,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public TextView about;
     public TextView skill;
 
-    public void init () {
+    public void initTxtView () { //Init of all different categorie of the CV & Custom Font
         personal= (TextView) findViewById(R.id.personal);
         personal.setOnClickListener(this);
         education= (TextView) findViewById(R.id.education);
@@ -34,13 +34,26 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         about.setOnClickListener(this);
         skill= (TextView) findViewById(R.id.skill);
         skill.setOnClickListener(this);
-
     }
+
+    public void initFont() {
+        Typeface font = Typeface.createFromAsset(getAssets(), "font/Montserrat.ttf");
+        personal.setTypeface(font);
+        education.setTypeface(font);
+        employement.setTypeface(font);
+        interet.setTypeface(font);
+        reference.setTypeface(font);
+        work.setTypeface(font);
+        about.setTypeface(font);
+        skill.setTypeface(font);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        init();
+        initTxtView();
+        initFont();
     }
 
     @Override

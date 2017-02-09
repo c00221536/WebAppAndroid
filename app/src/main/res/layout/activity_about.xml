@@ -44,18 +44,6 @@
         android:layout_marginBottom="91dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="        Android Application devlopped
-by David LUONG
-"
-        android:id="@+id/textView14"
-        android:layout_above="@+id/textView11"
-        android:layout_alignStart="@+id/uB"
-        android:layout_marginBottom="26dp" />
-
-    <TextView
         android:text="WebApplication Assemment 3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -70,8 +58,20 @@ by David LUONG
         android:text="© All rights reserved
 "
         android:id="@+id/textView11"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="31dp"
         android:layout_above="@+id/textView13"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="        Android Application devlopped
+by David LUONG
+"
+        android:id="@+id/textView14"
+        android:layout_marginBottom="25dp"
+        android:layout_above="@+id/textView11"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -79,17 +79,17 @@ by David LUONG
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView13"
+        android:layout_marginBottom="21dp"
         android:layout_above="@+id/itc"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:text="Resume of David LUONG for Android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
+        android:layout_marginBottom="13dp"
         android:layout_above="@+id/textView14"
-        android:layout_alignStart="@+id/textView14"
-        android:layout_marginBottom="12dp" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

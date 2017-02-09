@@ -13,15 +13,6 @@
     tools:context="com.example.david.webapp.personal">
 
     <TextView
-        android:text="My personal Details"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:textSize="60px"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
         android:text="10 rue des hortensias"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -76,17 +67,6 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="10dp" />
 
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        app:srcCompat="@drawable/linkedin"
-        android:layout_marginBottom="50dp"
-        android:id="@+id/imageView21"
-        android:clickable="true"
-        android:onClick="linkedIn"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:text="I really like everything in link with the technology, the creation and the evolution. You will find directly my LinkedIn profile below :)"
         android:layout_width="wrap_content"
@@ -100,11 +80,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:textSize="20dp"
+        android:textSize="30dp"
+        android:textColor="#39b5cd"
         android:id="@+id/textView34"
         android:text="David LUONG"
-        android:layout_below="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/linkedin"
+        android:layout_marginBottom="39dp"
+        android:id="@+id/imageView21"
+        android:clickable="true"
+        android:onClick="linkedIn"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

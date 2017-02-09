@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/curriculum"
-        android:label="@string/app_name"
+        android:label="Resume of David LUONG"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -16,25 +16,29 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeActivity" />
-        <activity android:name=".personal" />
+        <activity android:name=".personal"
+            android:label="My Personal details"/>
         <activity
             android:name=".education"
-            android:label="@string/title_activity_education"
+            android:label="Education History"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".employement"
-            android:label="@string/title_activity_employement"
+            android:label="Employement History"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".about" />
-        <activity android:name=".ref" />
-        <activity android:name=".project" />
+        <activity android:name=".about"
+            android:label="About the App!"/>
+        <activity android:name=".ref"
+            android:label="My references"/>
+        <activity android:name=".project"
+            android:label="My future project"/>
         <activity
             android:name=".interet"
-            android:label="@string/title_activity_interet"
+            android:label="Interest &amp; Hobbies"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".skill"
-            android:label="@string/title_activity_skill"
+            android:label="My personal Skills"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

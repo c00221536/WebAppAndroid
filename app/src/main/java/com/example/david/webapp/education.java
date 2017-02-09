@@ -1,6 +1,7 @@
 package com.example.david.webapp;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -16,6 +17,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class education extends AppCompatActivity {
 
@@ -33,7 +35,26 @@ public class education extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+    public void initFontedu() {
+        TextView txt = (TextView) findViewById(R.id.section_label);
+        TextView txt1 = (TextView) findViewById(R.id.textView35);
+        TextView txt2= (TextView) findViewById(R.id.textView36);
+        TextView txt3 = (TextView) findViewById(R.id.textView37);
+        TextView txt4 = (TextView) findViewById(R.id.textView38);
+        TextView txt5 = (TextView) findViewById(R.id.textView39);
+        TextView txt6 = (TextView) findViewById(R.id.textView45);
+        TextView txt7 = (TextView) findViewById(R.id.linkedIn);
 
+        Typeface font = Typeface.createFromAsset(getAssets(), "font/Montserrat.ttf");
+        txt.setTypeface(font);
+        txt1.setTypeface(font);
+        txt2.setTypeface(font);
+        txt3.setTypeface(font);
+        txt4.setTypeface(font);
+        txt5.setTypeface(font);
+        txt6.setTypeface(font);
+        txt7.setTypeface(font);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +79,7 @@ public class education extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                initFontedu();
             }
         });
 

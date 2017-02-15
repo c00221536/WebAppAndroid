@@ -1,5 +1,6 @@
 package com.example.david.webapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.design.widget.TabLayout;
@@ -21,7 +22,13 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class employement extends AppCompatActivity {
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide

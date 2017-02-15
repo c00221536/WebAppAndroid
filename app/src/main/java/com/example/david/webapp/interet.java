@@ -1,5 +1,6 @@
 package com.example.david.webapp;
 
+import android.content.Context;
 import android.net.Uri;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,11 +20,17 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 public class interet extends AppCompatActivity implements interet1.OnFragmentInteractionListener,
         interet2.OnFragmentInteractionListener, interet3.OnFragmentInteractionListener,
         interet4.OnFragmentInteractionListener, interet5.OnFragmentInteractionListener,
         interet6.OnFragmentInteractionListener {
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a

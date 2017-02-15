@@ -1,5 +1,6 @@
 package com.example.david.webapp;
 
+import android.content.Context;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,8 +20,9 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
-public class skill extends AppCompatActivity {
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
+public class skill extends AppCompatActivity {
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
@@ -63,6 +65,10 @@ public class skill extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
 

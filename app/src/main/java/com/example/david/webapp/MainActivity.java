@@ -1,5 +1,6 @@
 package com.example.david.webapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
@@ -19,28 +20,24 @@ import android.widget.RelativeLayout.LayoutParams;
 import android.app.ActionBar;
 import android.widget.TextView;
 
+import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
+
 
 public class MainActivity extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 3000;
-
-    public void initFontMain() {
-        TextView txt = (TextView) findViewById(R.id.textView);
-        TextView txt1 = (TextView) findViewById(R.id.textView4);
-        TextView txt2= (TextView) findViewById(R.id.textView5);
-        TextView txt3 = (TextView) findViewById(R.id.textView6);
-
-        Typeface font = Typeface.createFromAsset(getAssets(), "font/Montserrat.ttf");
-        txt.setTypeface(font);
-        txt1.setTypeface(font);
-        txt2.setTypeface(font);
-        txt3.setTypeface(font);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initFontMain();
+        //initFontMain();
+
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+                .setDefaultFontPath("font/Montserrat.ttf")
+                .setFontAttrId(R.attr.fontPath)
+                .build()
+        );
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -51,5 +48,9 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         }, SPLASH_TIME_OUT);
+    }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 }

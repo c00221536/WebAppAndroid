@@ -1,11 +1,14 @@
 package com.example.david.webapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
     public TextView personal;
@@ -36,24 +39,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         skill.setOnClickListener(this);
     }
 
-    public void initFont() {
-        Typeface font = Typeface.createFromAsset(getAssets(), "font/Montserrat.ttf");
-        personal.setTypeface(font);
-        education.setTypeface(font);
-        employement.setTypeface(font);
-        interet.setTypeface(font);
-        reference.setTypeface(font);
-        work.setTypeface(font);
-        about.setTypeface(font);
-        skill.setTypeface(font);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         initTxtView();
-        initFont();
+    }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     @Override

@@ -26,7 +26,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 3000;
-    
+
     public void initFontMain() {
         TextView txt = (TextView) findViewById(R.id.textView);
         TextView txt1 = (TextView) findViewById(R.id.textView4);

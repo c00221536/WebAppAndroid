@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_project"
@@ -10,7 +10,9 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.david.webapp.project">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -32,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I saw an interesting Degree, called MIAGE, (Méthode Informatique Appliquées à la Gestion des Entreprise)
-His equivalent in Europe is the Master of Business Informatics"
+His equivalent in Europe is the Master of Business Informatics."
         android:id="@+id/textView61"
         android:layout_below="@+id/textView63"
         android:layout_alignParentStart="true"
@@ -41,7 +43,7 @@ His equivalent in Europe is the Master of Business Informatics"
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Currently Student in third years, I am lookinkg for an Master Degree in France. Moreover, I would like to do an intership in Ireland during this summer in a big company. Thanks to this, I could have two experience in 2 different types of company. (Startup and Big Company)"
+        android:text="Currently Student in third years, I am lookinkg for an Master Degree in France. Moreover, I would like to do an intership in Ireland during this summer in a big company. Thanks to this, I could have two experience in 2 different types of company. (Startup and Big Company)."
         android:id="@+id/textView63"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -51,7 +53,7 @@ His equivalent in Europe is the Master of Business Informatics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I see the master I want in few University in France, I will try these University :
-Paris Dauphine / Paris Sorbonne / Paris Descartes / Renne / Toulouse / Bordeaux "
+Paris Dauphine / Paris Sorbonne / Paris Descartes / Renne / Toulouse / Bordeaux."
         android:layout_marginTop="20dp"
         android:id="@+id/textView65"
         android:layout_below="@+id/textView64"
@@ -60,25 +62,31 @@ Paris Dauphine / Paris Sorbonne / Paris Descartes / Renne / Toulouse / Bordeaux 
     <ImageView
         android:layout_height="150dp"
         app:srcCompat="@drawable/renne"
+        android:onClick="renne"
         android:id="@+id/imageView29"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_width="110dp" />
+        android:layout_width="110dp"
+        android:clickable="true"
+        android:layout_below="@+id/textView65"
+        android:layout_alignParentStart="true" />
 
     <ImageView
         android:layout_height="150dp"
         app:srcCompat="@drawable/dauphine"
+        android:onClick="paris"
         android:id="@+id/imageView9"
         android:layout_width="110dp"
-        android:layout_alignParentBottom="true"
+        android:clickable="true"
+        android:layout_below="@+id/textView65"
         android:layout_centerHorizontal="true" />
 
     <ImageView
+        app:srcCompat="@drawable/bordo1"
+        android:id="@+id/imageView28"
+        android:onClick="bordeaux"
+        android:clickable="true"
         android:layout_width="110dp"
         android:layout_height="150dp"
-        app:srcCompat="@drawable/bordo"
-        android:id="@+id/imageView32"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView65"
         android:layout_alignParentEnd="true" />
-
 </RelativeLayout>
+</ScrollView>

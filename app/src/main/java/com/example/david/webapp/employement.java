@@ -1,5 +1,7 @@
 package com.example.david.webapp;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -67,7 +69,10 @@ public class employement extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText("emailD","luongd39@gmail.com");
+                clipboard.setPrimaryClip(clip);
+                Snackbar.make(view, "Mail of David LUONG added the clipboard", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -102,8 +107,9 @@ public class employement extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_linkedin) {
+            Intent linkedIn = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/david-luong-b61562112/")); //Redirect LinkedIn
+            startActivity(linkedIn); //Start activity
         }
 
         return super.onOptionsItemSelected(item);

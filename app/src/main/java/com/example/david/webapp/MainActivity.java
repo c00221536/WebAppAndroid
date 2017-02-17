@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initFontMain();
+        initFontMain(); //calling the function
 
-        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
+        CalligraphyConfig.initDefault(new CalligraphyConfig.Builder() //Use the Calligarphy library Font
                 .setDefaultFontPath("font/Montserrat.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()

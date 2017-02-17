@@ -16,7 +16,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 public class personal extends AppCompatActivity {
 
     @Override
-    protected void attachBaseContext(Context newBase) {
+    protected void attachBaseContext(Context newBase) { //Calligraphy library
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
@@ -24,7 +24,6 @@ public class personal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal);
-        //initFontPerso();
     }
 
     public void linkedIn(View view){

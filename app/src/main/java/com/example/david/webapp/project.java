@@ -14,7 +14,7 @@ import static android.R.attr.gravity;
 
 public class project extends AppCompatActivity {
     @Override
-    protected void attachBaseContext(Context newBase) {
+    protected void attachBaseContext(Context newBase) { //Calligraphy library
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 

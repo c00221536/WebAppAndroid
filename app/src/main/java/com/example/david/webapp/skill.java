@@ -63,7 +63,7 @@ public class skill extends AppCompatActivity {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { //Mail in Clipboard
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("emailD","luongd39@gmail.com");
                 clipboard.setPrimaryClip(clip);
@@ -148,7 +148,7 @@ public class skill extends AppCompatActivity {
         }
 
         @Override
-        public Fragment getItem(int position) {
+        public Fragment getItem(int position) { //Return the fragment skill page
             switch (position) {
                 case 0:
                     return new skill1();
@@ -169,7 +169,7 @@ public class skill extends AppCompatActivity {
         }
 
         @Override
-        public CharSequence getPageTitle(int position) {
+        public CharSequence getPageTitle(int position) { //Title of the page
             switch (position) {
                 case 0:
                     return "Computing";

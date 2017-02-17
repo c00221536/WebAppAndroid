@@ -14,7 +14,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class ref extends AppCompatActivity {
     @Override
-    protected void attachBaseContext(Context newBase) {
+    protected void attachBaseContext(Context newBase) { //Calligraphy library
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
     @Override

@@ -25,16 +25,16 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 
 public class MainActivity extends AppCompatActivity {
-    private static int SPLASH_TIME_OUT = 3000;
+    private static int SPLASH_TIME_OUT = 4000; //Define the time of the Welcome screen in ms
 
     public void initFontMain() {
         TextView txt = (TextView) findViewById(R.id.textView);
         TextView txt1 = (TextView) findViewById(R.id.textView4);
         TextView txt2= (TextView) findViewById(R.id.textView5);
         TextView txt3 = (TextView) findViewById(R.id.textView6);
-        Typeface font = Typeface.createFromAsset(getAssets(), "font/Montserrat.ttf");
+        Typeface font = Typeface.createFromAsset(getAssets(), "font/Montserrat.ttf"); //Define the custom font for the main page
 
-        txt.setTypeface(font);
+        txt.setTypeface(font); //Apply the font
         txt1.setTypeface(font);
         txt2.setTypeface(font);
         txt3.setTypeface(font);

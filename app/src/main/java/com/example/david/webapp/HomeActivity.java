@@ -54,8 +54,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) { //OnClick the user, we start the activity choosen
         switch (v.getId()) {
             case R.id.personal:
-                Intent personal = new Intent(HomeActivity.this, personal.class);
-                startActivity(personal);
+                Intent personal = new Intent(HomeActivity.this, personal.class); //Create the intent
+                startActivity(personal); //Start the Activity
                 break;
             case R.id.education:
                 Intent Education = new Intent(HomeActivity.this, education.class);

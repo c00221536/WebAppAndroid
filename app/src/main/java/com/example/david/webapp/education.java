@@ -26,7 +26,7 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class education extends AppCompatActivity {
     @Override
-    protected void attachBaseContext(Context newBase) {
+    protected void attachBaseContext(Context newBase) { //Calligraphy library
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
     /**
@@ -63,7 +63,7 @@ public class education extends AppCompatActivity {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { //Copy mail in clipboard
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("emailD","luongd39@gmail.com");
                 clipboard.setPrimaryClip(clip);
@@ -75,7 +75,7 @@ public class education extends AppCompatActivity {
 
     }
 
-    public void duhamel(View view){
+    public void duhamel(View view){ //Reidrection school
         Intent duhamel = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.lycee-jacques-duhamel-dole-jura.fr/fr/lycee-jacques-duhamel-dole-franche-comte.php"));
         startActivity(duhamel); //Start activity
     }
@@ -110,7 +110,7 @@ public class education extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_linkedin) {
+        if (id == R.id.action_linkedin) { //Menu option Linkedin
             Intent linkedIn = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/david-luong-b61562112/")); //Redirect LinkedIn
             startActivity(linkedIn); //Start activity
         }
@@ -147,7 +147,7 @@ public class education extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
-            switch (position) {
+            switch (position) { //Title of the page
                 case 0:
                     return "2017";
                 case 1:

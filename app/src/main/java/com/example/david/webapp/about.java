@@ -37,7 +37,7 @@ public class about extends AppCompatActivity {
         startActivity(ubfc); //Start activity
     }
     @Override
-    protected void attachBaseContext(Context newBase) {
+    protected void attachBaseContext(Context newBase) { //Calligraphy library
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 }

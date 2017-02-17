@@ -68,7 +68,7 @@ public class employement extends AppCompatActivity {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view) { //Copy mail in clipboard
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("emailD","luongd39@gmail.com");
                 clipboard.setPrimaryClip(clip);
@@ -107,7 +107,7 @@ public class employement extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_linkedin) {
+        if (id == R.id.action_linkedin) { //Item menu, redirection to the LinkedIN profile
             Intent linkedIn = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/david-luong-b61562112/")); //Redirect LinkedIn
             startActivity(linkedIn); //Start activity
         }
@@ -122,7 +122,7 @@ public class employement extends AppCompatActivity {
         }
 
         @Override
-        public Fragment getItem(int position) {
+        public Fragment getItem(int position) { //Get the item in function
             switch (position){
                 case 0:
                     return new employementtab1();
@@ -142,7 +142,7 @@ public class employement extends AppCompatActivity {
         }
 
         @Override
-        public CharSequence getPageTitle(int position) {
+        public CharSequence getPageTitle(int position) { //Title of the tab
             switch (position) {
                 case 0:
                     return "Student Job";

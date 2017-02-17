@@ -44,7 +44,7 @@
         android:layout_marginBottom="91dp" />
 
     <TextView
-        android:text="WebApplication Assemment 3"
+        android:text="WebApplication Assignment  3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView13"

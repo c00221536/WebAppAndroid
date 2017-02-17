@@ -11,16 +11,16 @@ import android.widget.TextView;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener {
-    public TextView personal;
-    public TextView education;
-    public TextView employement;
-    public TextView interet;
-    public TextView reference;
-    public TextView work;
-    public TextView about;
-    public TextView skill;
+    private TextView personal;
+    private TextView education;
+    private TextView employement;
+    private TextView interet;
+    private TextView reference;
+    private TextView work;
+    private TextView about;
+    private TextView skill;
 
-    public void initTxtView () { //Init of all different categorie of the CV & Custom Font
+    public void initTxtView () { //Init of all different category of the CV & Custom Font
         personal= (TextView) findViewById(R.id.personal);
         personal.setOnClickListener(this);
         education= (TextView) findViewById(R.id.education);
@@ -43,15 +43,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        initTxtView();
+        initTxtView(); //Calling the init function
     }
     @Override
-    protected void attachBaseContext(Context newBase) {
+    protected void attachBaseContext(Context newBase) { //Calligraphy library
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v) { //OnClick the user, we start the activity choosen
         switch (v.getId()) {
             case R.id.personal:
                 Intent personal = new Intent(HomeActivity.this, personal.class);
